@@ -21,3 +21,7 @@ def two():
 @app.route("/Borden")
 def borden():
     return render_template('borden_site.html') #bokeh_script=script, bokeh_div=div)
+
+@app.route("/ADE")
+def ade():
+    return render_template('ADE_example.html') #bokeh_script=script, bokeh_div=div)

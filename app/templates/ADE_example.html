@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %} Borden Site | Water Project {% endblock %}
+
+{% block content %}
+
+
+    <h1>Advection-Dispersion Equation</h1>
+
+    <hr>
+
+    <h3>Background:</h3>
+    <p>Advection is the process by which a contaminant is carried along with the velocity of the 
+        groundwater. Dispersion is the process by which contaminants spread away from the direct 
+        path of flow. These two processes combined can help solve contamination issues through the 
+        Advective-Dispersive Equation, or ADE. However, the ADE is idealized and does not always 
+        accurately represent what actually happens in these systems. </p>
+
+    <h3>Model Application:</h3>
+    <p>The plot below operates on the same time and space scale as the Borden Site example. 
+        Change the chemical type and time to see how this plume varies in space. Recall what 
+        you previously learned about dispersion to link chemical to spread. </p>
+
+    <h3>Questions:</h3>
+    <ol>
+        <li>What directions are these contaminants moving?</li>
+    </ol>
+
+    <h3>Advanced Questions:</h3>
+    <ol>
+        <li>Do these plumes look similar to those shown in the 2D or Borden Site examples? 
+            If no, what simplifications do you think play a role in these differences? </li>
+        <li>Why do you think scientists and engineers use the ADE to make contamination predictions 
+            despite the simplifications you previsouly identified?</li>
+    </ol>
+
+
+    <hr>
+
+   <!-- <iframe src="https://onedimensiontesting.herokuapp.com/app" width="1000" height="500" style="border: none"></iframe> -->
+
+    <!-- adding safe to directly load the bokeh content into the page 
+    {{ bokeh_script|safe }}
+
+    {{ bokeh_div|safe }}-->
+
+{% endblock %}
